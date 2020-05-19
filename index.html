@@ -1,0 +1,1012 @@
+<!--
+ ____   __   __ _  ____  __  ____  __ _
+(  _ \ /  \ (  ( \(  __)/  \(  _ \(  / )
+ ) _ ((  O )/    / ) _)(  O ))   / )  (
+(____/ \__/ \_)__)(__)  \__/(__\_)(__\_)
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        X-pan
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A demo website for the X-Pan Restaurant Template" />
+    <meta name="keywords" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xpan.bonfork.net/" />
+    <meta property="og:title" content="X-Pan Restaurant" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="A demo website for the X-Pan Restaurant Template" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#808080">
+    <meta name="theme-color" content="#ffffff">
+    <!-- face fonts -->
+    <link rel="dns-prefetch" href="https://use.typekit.net/">
+    <link rel="dns-prefetch" href="https://p.typekit.net">
+    <link rel="stylesheet" href="https://use.typekit.net/hdz2inb.css">
+    <!-- libraries needed to pick the time -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/timepicker@1.13.0/jquery.timepicker.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- for the gallery view -->
+    <link rel="stylesheet" href="css/simplelightbox.css">
+    <!-- modal show up -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/component.css">
+    <!-- google schema for the restaurant data-->
+    <script type="application/ld+json" id="data">
+        {
+            "@context": "http://schema.org",
+            "@type": "Restaurant",
+            "priceRange": "$",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Toronto",
+              "addressRegion": "ON",
+              "addressCountry": "Canada",
+              "postalCode": "M5E 1Z9",
+              "streetAddress": "12 Yonge St."
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 43.643162,
+                "longitude": -79.376259
+            },
+            "name": "X-pan Restaurant",
+            "telephone": "+44 (0)1234 56789",
+            "url": "https://xpan.bonfork.net",
+            "paymentAccepted": "",
+            "description": "X-pan Restaurant Demo description. Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam id urna egestas ultricies nulla at viverra nibh donec sollicitudin metus sit amet est laoreet gravida donec cursus enim quis.",
+          
+            "servesCuisine": "French cuisine",
+            "hasMenu": "https://xpan.bonfork.net/#menu",
+            "acceptsReservations": "True",
+
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday"
+                    ],
+                    "opens": "18:00",
+                    "closes": "04:00",
+                    "is_open": true
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Wednesday"
+                    ],
+                    "is_open": false
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "18:00",
+                    "closes": "04:00",
+                    "is_open": true
+                }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Menu",
+              "itemListElement": [
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Main Menu",
+                  "itemListElement": [
+                    {
+                      "@type": "OfferCatalog",
+                      "name": "Breakfast",
+                      "itemListElement": [
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 7.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Crab Cake Sandwich",
+                            "description": "A delicate crab cake served on a toasted roll with lettuce and tartar sauce.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 9.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Tuscan Grilled Chicken Panini",
+                            "description": "Grilled chicken with provolone, artichoke hearts, and roasted red pesto on grilled rosemary focaccia.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 9.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Southwest Turkey Club",
+                            "description": "Sliced turkey on a toasted roll with bacon, lettuce and tomatoes and avocado-ranch dressing.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 9.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Mediterranean Turkey Panini",
+                            "description": "Roast turkey on grilled rosemary focaccia with a spinach-artichoke cheese sauce.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "OfferCatalog",
+                      "name": "Lunch",
+                      "itemListElement": [
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 9.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Pulled Pork",
+                            "description": "Our slow roasted pork simmered in tangy BBQ sauce and served on a toasted roll with cheddar cheese.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 7,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Lobster Roll",
+                            "description": "A Maine favorite. Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll. Market Price",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 7.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Tuna Melt",
+                            "description": "Your choice of bread with tuna salad and cheddar cheese finished on the grill.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 10.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "French Dip",
+                            "description": "A toasted sub roll with shaved prime rib and a cup of French onion soup for dipping.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "OfferCatalog",
+                      "name": "Dinner",
+                      "itemListElement": [
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 7.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Build Your Own",
+                            "description": "Your choice of sliced turkey, prime rib, ham, or tuna with your choice of cheese.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 12.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Black and Blue",
+                            "description": "Angus patty rubbed with cracked black pepper and topped with creamy blue cheese from York Hill Farm.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 8.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Soup and Sandwich or Salad",
+                            "description": "Your choice of our soup of the day with a ½ sandwich or a side salad.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "priceCurrency": "CAD",
+                          "price": 11.95,
+                          "itemOffered": {
+                            "@type": "MenuItem",
+                            "name": "Carribean Jerk",
+                            "description": "Jerk spiced-rubbed patty topped with swiss cheese and grilled pineapple.",
+                            "image": [""],
+                            "nutrition": {
+                              "@type": "NutritionInformation",
+                              "calories": ""
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+    </script>
+    <script src="js/date-time-picker.js"></script>
+</head>
+
+<body>
+    <div class="p-0 m-0 animsition">
+        <a href="#" title="X-pan" class=" stamp position-fixed d-flex justify-content-center align-items-center"></a>
+        <!-- Header -->
+
+        <header class=" w-100 h-auto position-relative" id="header">
+
+
+            <img id="image" class=" h-auto position-fixed" src="images/shrimp-only-plate.png" alt="shrimps">
+
+            <ul class="position-relative  p-0 text-right ml-auto mb-5" style="list-style-type:none;">
+                <li>sophisticated</li>
+                <li class="w-auto pr-4 pr-sm-5 mr-4">east-anatolian</li>
+                <li>cuisine</li>
+            </ul>
+
+            <div class="content ml-sm-auto mt-5 ml-4 ">
+                <nav class="nav flex-column ml-3 ">
+                    <span data-toggle="modal" data-target="#about" data-ui-class="a-zoom">
+                        <a class="nav-link active " title="What about us!" href="#about">
+                            <span class="rectagle">the eatery</span>
+                        </a>
+                    </span>
+
+                    <span data-toggle="modal" data-target="#menu" data-ui-class="a-zoom">
+                        <a class="nav-link active" title="Check our menu!" id="menu-link" href="#menu">
+                            what’s cooking
+                        </a>
+                    </span>
+                    <span data-toggle="modal" data-target="#gallery-modal" data-ui-class="a-zoom">
+                        <a class="nav-link active" href="#gallery-modal" title="Take a look!">
+                            <span class="rectagle">gallery</span>
+                        </a>
+                    </span>
+                    <span data-toggle="modal" data-target="#contacts-modal" data-ui-class="a-zoom">
+                        <a class="nav-link active " title="Contact us!" href="#contacts-modal">
+                            <span class="rectagle">
+                                contact
+                            </span>
+                        </a>
+                    </span>
+                </nav>
+                <div class="contact-info ml-3 position-relative">
+                    12 Yonge St., Toronto ON
+                    <a data-placement="top" title="Call Us" href="tel:+4169822901">
+                        416-982-2901</a>
+
+                    <a title="Email Us" href="mailto:reservations@x-panrestaurant.com">
+                        reservations@x-panrestaurant.com
+                    </a>
+
+                    <div class="mt-5">
+                        <h6 class="font-weight-bold">Subscribe to our newsletter</h6>
+                        <form class="position-relative simform" autocomplete="off" method="post" id="email-form">
+                            <div class="simform-inner">
+                                <ol class="questions">
+                                    <li>
+                                        <input type="text" name="name" id="name" required="required" placeholder="your name" />
+                                    </li>
+                                    <li>
+                                        <input type="email" name="email" id="email" required="required" placeholder="your email" />
+                                    </li>
+                                </ol>
+                                <button class="submit" type="submit">Submit</button>
+                                <div class="controls">
+                                    <button class="next"></button>
+                                    <div class="progress"></div>
+                                    <span class="number">
+                                        <span class="number-current"></span>
+                                        <span class="number-total"></span>
+                                    </span>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                            <span class="final-message"></span>
+
+                        </form>
+                    </div>
+
+                    <nav class="nav flex-column  mt-3 pt-3">
+                        <a class="nav-link p-0 " title="Follow Us" href="https://twitter.com/_Bonfork_">
+                            <span class="underline">twitter</span>
+                        </a>
+                        <a class="nav-link p-0" title="Follow Us" href="https://www.facebook.com/bonfork/">facebook</a>
+                        <a class="nav-link p-0" title="Follow Us" href="https://www.instagram.com/bonfork/">instagram</a>
+                    </nav>
+
+                    <div class="author mt-3 pt-3">
+                        <a class="position-relative" href="#term-privacy" title="Click to open!" data-toggle="modal" data-target="#term-privacy"
+                            data-ui-class="a-zoom">
+                            Terms and Privacy </a>
+                        <br> Restaurant Website by
+                        <a class="position-relative" title="Check us out!" href="https://bonfork.com">
+                            Bonfork </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="about" class="modal permalink animate modal-fullscreen " tabindex="-1" role="dialog" aria-labelledby="menuModalLabel"
+            aria-hidden="true" data-backdrop="true">
+            <a href="#" class=" stamp position-fixed d-flex justify-content-center align-items-center"></a>
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div id="contact" class=" modal-body position-relative w-100 overflow-hidden">
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="bg-img position-absolute">
+                            <linearGradient id="grad1" x1="0%" y1="100%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3c3c3c;stop-opacity:1"></stop>
+                                <stop offset="100%" style="stop-color:#000000;stop-opacity:1"></stop>
+                            </linearGradient>
+                            <polygon id="myClipPath" points="0 0, 0 90, 100 52, 100 0" fill="url(#grad1)"></polygon>
+                        </svg>
+                        <h2 class="position-relative">
+                            sofisticated east-anatolian cuisine
+                        </h2>
+
+                        <div class="sub-header  position-relative  my-5  pb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales
+                            velit.
+                        </div>
+
+                        <div class="row content no-gutters justify-content-lg-start justify-content-center">
+
+                            <div class="text-center text-lg-left col-12 col-lg-3 mb-5  mx-auto ml-lg-0 mr-lg-4 mr-xl-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales
+                                velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                Duis in tempor neque. Maecenas at sagittis nibh.
+
+                            </div>
+
+                            <div class="col-12 col-lg-4 mx-lg-4 mr-xl-0 ml-xl-5  pr-xl-3">
+                                <div class="row no-gutters">
+                                    <div class="col-12 mb-5  d-flex d-lg-block justify-content-center">
+                                        <img class="img-fluid float-lg-right" src="images/lady.jpeg" alt="Lady with ribbon">
+                                    </div>
+                                    <div class=" col-12  mb-5  d-flex d-lg-block justify-content-center">
+                                        <img class="img-fluid float-lg-right" src="images/pasta.jpeg" alt="pasta">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12  col-lg-3 ml-lg-4 ml-xl-5 end text-lg-left text-center">
+
+                                <div>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales
+                                    velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    Curae; Duis in tempor neque. Maecenas at sagittis nibh.
+                                </div>
+
+                                <h3 class="mt-4 mb-5">
+                                    Proin ligula mauris, blandit vel mauris ac, fermentum aliquam quam.
+                                </h3>
+
+                                <div>
+                                    Proin consectetur gravida eros, et laoreet quam sagittis a. Sed ultricies, augue ac mollis facilisis, sem erat vehicula lectus,
+                                    at porta turpis erat sed mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales velit. Vestibulum
+                                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis in
+                                    tempor neque.
+                                    <br>
+                                    <br>
+                                    <br> Maecenas at sagittis nibh. Proin ligula mauris, blandit vel mauris ac, fermentum aliquam
+                                    quam. Proin consectetur gravida eros, et laoreet quam sagittis a. Sed ultricies, augue
+                                    ac mollis facilisis, sem erat vehicula lectus, at porta turpis erat sed mi.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu" class="modal permalink animate modal-fullscreen " tabindex="-1" role="dialog" aria-labelledby="menuModalLabel"
+            aria-hidden="true" data-backdrop="true">
+            <a href="#" class=" stamp position-fixed d-flex justify-content-center align-items-center"></a>
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div class="modal-body menu position-relative">
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+
+                        <h2 class="" id="menuModalLabel">
+                            what’s cooking
+                        </h2>
+                        <div class="row no-gutters justify-content-center justify-content-lg-start mt-5">
+                            <div class="col-12 col-lg-5  p-0 mt-4 mt-lg-0 ml-0 mr-lg-5 order-lg-1 order-2">
+                                <nav class="nav flex-column pb-2 overflow-hidden">
+                                    <div class="accordion" id="menu-content">
+                                        <a class="nav-link  position-relative p-0 w-100" data-toggle="collapse" href="#" data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            <div class="position-relative rectangle d-inline-block">
+                                                breakfast
+                                            </div>
+                                        </a>
+                                        <div class=" row pr-2 mt-3 pt-1  collapse no-gutters" id="collapseOne" data-parent="#menu-content">
+                                            <div class="col mb-3">
+                                                <div class="row mt-2  mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Crab Cake Sandwich
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $7.95
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Tuscan Grilled Chicken Panini
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $9.95
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Southwest Turkey Club
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $9.95
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Mediterranean Turkey Panini
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $9.95
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="nav-link  position-relative p-0 w-100" data-toggle="collapse" href="#" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+
+                                            <div class="position-relative rectangle d-inline-block">
+                                                lunch
+                                            </div>
+                                        </a>
+                                        <div class=" row pr-2 mt-3 pt-1  collapse no-gutters " id="collapseTwo" data-parent="#menu-content">
+                                            <div class="col mb-3">
+                                                <div class="row mt-2  mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Pulled Pork
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $9.95
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Lobster Roll
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $7
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Tuna Melt
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $7.95
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        French Dip
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $13.95
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="nav-link  position-relative p-0 w-100" data-toggle="collapse" href="#" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <div class="position-relative rectangle d-inline-block">
+                                                dinner
+                                            </div>
+                                        </a>
+                                        <div class=" row pr-2 mt-3 pt-1  collapse no-gutters" id="collapseThree" data-parent="#menu-content">
+                                            <div class="col mb-3">
+                                                <div class="row mt-2  mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Build Your Own
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $7.95
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Black and Blue
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $12.95
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Soup and Sandwich or Salad
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $8.95
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 mw-100 no-gutters item ">
+                                                    <div class="col-6 item-title">
+                                                        Carribean Jerk
+                                                    </div>
+                                                    <div class="col-6 text-right item-price">
+                                                        $11.95
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <a href="https://www.dropbox.com/s/gidt0gas70zossj/menu.pdf?dl=0" target="_blank" class="btn mt-5 px-3">Download Menu</a>
+                            </div>
+                            <div class=" d-none d-sm-flex col-12 col-lg-5 pl-lg-5 order-lg-2 order-1 mb-2 d-lg-block justify-content-center justify-content-lg-start">
+                                <img class="h-auto img-fluid" src="images/table-with-window-view.jpg" alt="table with window view">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery-modal" class="modal permalink animate modal-fullscreen " tabindex="-1" role="dialog" aria-labelledby="menuModalLabel"
+            aria-hidden="true" data-backdrop="true">
+            <a href="#" class=" stamp position-fixed d-flex justify-content-center align-items-center"></a>
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div id="gallery" class=" modal-body position-relative w-100 overflow-hidden">
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="bg-img position-absolute">
+                            <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3c3c3c;stop-opacity:1"></stop>
+                                <stop offset="100%" style="stop-color:#000000;stop-opacity:1"></stop>
+                            </linearGradient>
+
+                            <polygon id="myClipPath2" points="0 0, 0 100, 100 80, 100 0" fill="url(#grad2)"></polygon>
+                        </svg>
+
+                        <h2 class="position-relative">
+                            sofisticated east-anatolian cuisine
+                        </h2>
+
+                        <div class="sub-header  position-relative  my-5  pb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales
+                            velit.
+                        </div>
+
+                        <div class="row no-gutters justify-content-center justify-content-lg-start mt-5 pt-1" id="gallery-container">
+                            <div class="col-md-3 col-6">
+                                <a href="images/food-from-the-top.jpeg" title="Food from the top">
+                                    <img class="img-fluid" src="images/food-from-the-top.jpeg" alt="Food from the top">
+                                </a>
+                                <a href="images/toast.jpeg" title="Toast">
+                                    <img class="img-fluid" src="images/toast.jpeg" alt="Toast">
+                                </a>
+                                <a class="d-md-none" href="images/pasta.jpeg" title="Pasta">
+                                    <img class="d-md-none img-fluid" src="images/pasta.jpeg" alt="Pasta">
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <a href="images/lady.jpeg" title="Lady with ribbon">
+                                    <img class="img-fluid" src="images/lady.jpeg" alt="Lady with ribbon">
+                                </a>
+                                <a href="images/cafe.jpeg" title="Cafe">
+                                    <img class="img-fluid" src="images/cafe.jpeg" alt="Cafe">
+                                </a>
+                                <a href="images/osters.jpg" title="Osters">
+                                    <img class="img-fluid" src="images/osters.jpg" alt="Osters">
+                                </a>
+                                <a class="d-md-none" href="images/empty-cafe.jpeg" title="Empty cafe">
+                                    <img class=" d-md-none img-fluid" src="images/empty-cafe.jpeg" alt="Empty cafe">
+                                </a>
+                            </div>
+                            <div class="col-3 d-none d-md-block">
+                                <a href="images/empty-cafe.jpeg" title="Empty cafe">
+                                    <img class="img-fluid" src="images/empty-cafe.jpeg" alt="Empty cafe">
+                                </a>
+                                <a href="images/pasta.jpeg" title="Pasta">
+                                    <img class="img-fluid" src="images/pasta.jpeg" alt="Pasta">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="term-privacy" class="modal permalink animate modal-fullscreen " tabindex="-1" role="dialog" aria-labelledby="menuModalLabel"
+            aria-hidden="true" data-backdrop="true">
+            <a href="#" class=" stamp position-fixed d-flex justify-content-center align-items-center"></a>
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div id="gallery" class=" modal-body position-relative w-100 overflow-hidden">
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="bg-img position-absolute">
+                            <linearGradient id="grad3" x1="0%" y1="100%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3c3c3c;stop-opacity:1"></stop>
+                                <stop offset="100%" style="stop-color:#000000;stop-opacity:1"></stop>
+                            </linearGradient>
+
+                            <polygon id="myClipPath2" points="0 0, 0 100, 100 80, 100 0" fill="url(#grad3)"></polygon>
+                        </svg>
+
+                        <h2 class="position-relative mb-5">
+                            terms and privacy
+                        </h2>
+
+                        <div class="sub-header  position-relative  my-5  py-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales
+                            velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque
+                            sit amet interdum sapien, eget sodales velit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales velit.
+                            <br>
+                            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet
+                            interdum sapien, eget sodales velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales velit. Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet interdum sapien,
+                            eget sodales velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam.
+                            Quisque sit amet interdum sapien, eget sodales velit.
+                            <br>
+                            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet
+                            interdum sapien, eget sodales velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales velit. Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet interdum sapien,
+                            eget sodales velit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contacts-modal" class="modal permalink animate modal-fullscreen " tabindex="-1" role="dialog" aria-labelledby="menuModalLabel"
+            aria-hidden="true" data-backdrop="true">
+            <a href="#" class=" stamp position-fixed d-flex justify-content-center align-items-center"></a>
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div id="contact" class=" modal-body position-relative w-100 overflow-hidden">
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h2 class="position-relative">
+                            we have been waiting for you
+                        </h2>
+
+                        <div class=" text-left w-100 d-lg-none mt-5 pt-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales
+                            velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                            Duis in tempor neque. Maecenas at sagittis nibh.
+
+                        </div>
+
+                        <div class="row content no-gutters justify-content-lg-start justify-content-center">
+
+                            <div class="text-center text-lg-left col-12 col-lg-3 mb-5  mx-auto ml-lg-0 mr-lg-4 mr-xl-5">
+                                <div class="d-none d-lg-block">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et velit quam. Quisque sit amet interdum sapien, eget sodales
+                                    velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    Curae; Duis in tempor neque. Maecenas at sagittis nibh.
+                                </div>
+                                <table class="position-relative table table-borderless  my-5">
+                                    <thead>
+                                        <tr>
+                                            <th class="p-0 pb-3 " colspan="2" scope="col">opening hours
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="position-relative" id="opening-times">
+                                    </tbody>
+                                </table>
+
+                                <a data-toggle="tooltip" data-placement="top" title="Call Us" href="tel:+4169822901">
+                                    <span itemprop="telephone"> 416-982-2901</span>
+                                </a>
+                                <br>
+
+                                <a href="mailto:reservations@x-panrestaurant.com">
+                                    reservations@x-panrestaurant.com
+                                </a>
+                                <br> 12 Yonge St., Toronto ON
+
+                            </div>
+
+                            <div class="col-12 col-lg-4 mx-lg-4 mr-xl-0 ml-xl-5  pr-xl-3">
+                                <div class="row no-gutters">
+                                    <div class="col-12 mb-5  d-flex d-lg-block justify-content-center">
+                                        <img class="img-fluid float-lg-right" src="images/brocoli.jpeg" alt="brocoli">
+                                    </div>
+                                    <div class=" col-12  mb-5  d-flex d-lg-block justify-content-center">
+                                        <img class="img-fluid float-lg-right" src="images/glass-of-whine.jpeg" alt="glass of whine">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12  col-lg-3 ml-lg-4 ml-xl-5 end">
+
+                                <h3 class=" text-center text-lg-left mb-5">
+                                    reservations
+                                </h3>
+                               <div class="alert alert-success" role="alert">
+                                Your reservation request has been sent. One of our staff will get back to you with a confirmation.
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                    something went wrong!
+                                </div>
+                                <form method="post" class="" id="reserve-form">
+                                    <label for="guest">Number of guests</label>
+                                    <input type="number" class="form-control mb-3 p-0 px-3" id="guest" name="guests" value="2" required>
+                                    <div class="form-row m-0 mt-1  w-100 d-flex justify-content-between ">
+                                        <div class="form-group col-sm-6 p-0 pr-sm-3">
+                                            <label for="time" class="">time</label>
+                                            <input type="text" class="form-control p-0 px-3" id="time" placeholder="hh:mm" minlength="7" maxlength="7" required name="Time">
+
+                                        </div>
+                                        <div class="form-group col-sm-6 p-0 pl-sm-1">
+                                            <label for="date" class="">date</label>
+                                            <input type="text" class="form-control p-0 px-3" id="date" placeholder="MM/DD" required autocomplete="off" minlength="7"
+                                                maxlength="7" name="Date">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-1">
+                                        <label for="name">name</label>
+                                        <input type="text" class="form-control p-0 px-3" id="name" name="name" required minlength="5">
+                                    </div>
+                                    <div class="form-group mt-1 mb-0">
+                                        <label for="email">email</label>
+                                        <input type="text" class="form-control p-0 px-3" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group mt-1 mb-0">
+                                        <label for="email">phone</label>
+                                        <input type="tel" name="phone" class="form-control p-0 px-3 pl-5" placeholder="Phone Number" id="phone" required>
+                                    </div>
+                                    <input type="submit" class="btn text-white w-100 mt-5" value="RESERVE">
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cursor">
+            <span class="off"></span>
+        </div>
+    </div>
+
+
+    <!-- jquery file-->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- for picking the time -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timepicker@1.13.0/jquery.timepicker.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '');
+    </script>
+    <script src="js/animsition.min.js"></script>
+    <!-- main index file-->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/stepsForm.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- for the gallery-->
+    <script src="js/simple-lightbox.js"></script>
+    <script>
+        $(function () {
+            var $gallery = $('#gallery-container a').simpleLightbox();
+        });
+
+        $(document).ready(function () {
+            function tConvert(time) {
+                time = time.toString().match(/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
+                if (time.length > 1) {
+                    time = time.slice(1);
+                    time[5] = +time[0] < 12 ? 'am' : 'pm';
+                    time[0] = +time[0] % 12 || 12;
+                }
+                return time.join('');
+            }
+
+            var data = JSON.parse($('#data').html());
+
+            var today = new Date();
+
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+
+            data.openingHoursSpecification.map(openingsItem => {
+                openingsItem.dayOfWeek.map(day => {
+                    var item = document.createElement('tr');
+
+                    var dayHeading = document.createElement('td');
+                    dayHeading.setAttribute('class', 'day');
+                    var dayItem = document.createTextNode(day);
+                    dayHeading.appendChild(dayItem);
+
+                    var hourHeading = document.createElement('td');
+                    hourHeading.setAttribute('class', 'schedule');
+
+                    if (openingsItem.is_open) {
+                        var openHours = document.createTextNode(tConvert(openingsItem.opens) + ' - ');
+                        var closeHours = document.createTextNode(tConvert(openingsItem.closes));
+                        hourHeading.appendChild(openHours);
+                        hourHeading.appendChild(closeHours);
+                    } else {
+                        var closed = document.createTextNode('Closed');
+                        hourHeading.appendChild(closed);
+                    }
+
+                    item.appendChild(dayHeading);
+                    item.appendChild(hourHeading);
+
+                    document.getElementById('opening-times').appendChild(item);
+                })
+            });
+        });
+
+
+
+        // Preloader
+        (function ($) {
+            "use strict";
+            $(".animsition").animsition({
+                inClass: "fade-in",
+                outClass: "fade-out",
+                inDuration: 500,
+                outDuration: 500,
+                linkElement: 'a:not([target="_blank"]):not([href^="#"]):not([href$=".jpg"]):not([href$=".png"])',
+                loading: true,
+                loadingParentElement: "body",
+                loadingClass: "animsition-loading2",
+                loadingInner:
+                    '<div class="spinner">\n        <div class="double-bounce1"></div>\n      <div class="double-bounce2"></div>\n      </div>',
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ["animation-duration", "-webkit-animation-duration"],
+                overlay: false,
+                overlayClass: "animsition-overlay-slide",
+                overlayParentElement: "body",
+                transition: function transition(url) {
+                    window.location.href = url;
+                }
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>
